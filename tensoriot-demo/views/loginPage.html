@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        font-family: "Arial";
+      }
+
+      #loginHeader {
+        text-align: center;
+        padding-top: 55px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      }
+
+      .login {
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        /* background: #23463f; */
+        background: #778fcf;
+        border-radius: 15px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #277582;
+        padding: 20px;
+      }
+
+      label {
+        /* color: #08ffd1; */
+        color: #2a2b28;
+        font-size: 17px;
+      }
+
+      #username {
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        padding-left: 8px;
+      }
+
+      #password {
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        padding-left: 8px;
+      }
+
+      #showPwd {
+        width: 10px;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        padding-left: 8px;
+        font-size: 15px;
+      }
+
+      #loginButton {
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 17px;
+        padding-left: 7px;
+        color: rgb(7, 7, 8);
+        font-size: 17px;
+        font-weight: bold;
+      }
+      div {
+        display: flex;
+
+        justify-content: center;
+      }
+
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br />
+
+    <br />
+    <div class="login">
+      <form>
+        <label for="username">
+          <b> User Name </b>
+        </label>
+        <input type="text" id="username" name="username" />
+        <br /><br />
+        <label for="password">
+          <b> Password </b>
+        </label>
+        <input type="password" href="#" id="password" name="password" />
+        <br /><br />
+
+        <input
+          type="checkbox"
+          href="#"
+          id="showPwdChkbox"
+          name="showPwdChkbox"
+        />
+        <label for="showPwd" id="showPwd" name="showPwd">
+          <b> Show password </b>
+        </label>
+        <br /><br />
+
+        <button href="#" , id="loginButton">Login</button>
+      </form>
+    </div>
+  </body>
+  <script src="/assets/js/login.js"></script>
+</html>
