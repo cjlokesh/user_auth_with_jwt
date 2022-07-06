@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "f30ea75c-b6d3-497b-a8d7-b75218d678f7",
+		"name": "user_authentication_jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"lokesh\",\r\n    \"password\": \"user1@tensoriot.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5566/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5566",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Protected Route",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5566/api/protect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5566",
+					"path": [
+						"api",
+						"protect"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
