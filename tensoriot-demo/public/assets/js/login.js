@@ -23,6 +23,7 @@ loginButton.addEventListener("click", async (event) => {
   }
 });
 
+// show password
 showPassword.addEventListener("click", async (event) => {
   let dataType = document.querySelector("#password").type;
   if (dataType === "password") {
