@@ -1,8 +1,6 @@
-
 # Project Title
 
 ## Backend application to validate credentials based on JWT Tokens
-
 
 - The application uses a database.sqlite file which has a single User table
 - The user table has a username and encrypted password
@@ -12,7 +10,14 @@
 - The database.sqLite can be examined by visiting the page https://sqliteviewer.app/
 - The application can be tested with basic UI served by the application or using exposed postman collection
 - On valid user credentials, the server responds with JWT Token or Error response message
+
 ## Run Locally
+
+### Prerequisite
+
+```bash
+  Node Version : 14.17.1
+```
 
 Clone the project
 
@@ -49,6 +54,7 @@ Access Fronted Served By Server
 ```bash
   http://localhost:5566
 ```
+
 Application default login credentials
 
 ```bash
@@ -60,13 +66,11 @@ How to use postman collections
 
 ```bash
   How to use postman collections
-  
-  From postman tool import collection under postman_collection directory  
+
+  From postman tool import collection under postman_collection directory
 
   user_authentication_jwt.postman_collection.json
 ```
-
-
 
 ## API Reference
 
@@ -78,8 +82,8 @@ How to use postman collections
   request with body as JSON which must contain username and password
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+| Parameter  | Type     | Description            |
+| :--------- | :------- | :--------------------- |
 | `username` | `string` | **Required**. username |
 | `password` | `string` | **Required**. password |
 
@@ -87,35 +91,33 @@ How to use postman collections
 
 ```http
   GET /api/protect
-  
-  TO access the protected API 
+
+  TO access the protected API
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `Authorization`      | `Header` | **Required**. Bearer  followed by JWT Token |
-
-
+| Parameter       | Type     | Description                                |
+| :-------------- | :------- | :----------------------------------------- |
+| `Authorization` | `Header` | **Required**. Bearer followed by JWT Token |
 
 ## FAQ
 
 #### Question 1
 
-Answer 1 
+Answer 1
 
 What happens when a user enters the login credentials through UI?
 
-- based on credentials alert will be generated 
-whether login is successful or not
+- based on credentials alert will be generated
+  whether login is successful or not
 
-- On sucessfull login:  alert will be along with JWT Token
+- On sucessfull login: alert will be along with JWT Token
 
-- On failure:  alert will be with error message
+- On failure: alert will be with error message
 
 - This is just to update an user
 
 ##### For more queries please reach out to me
+
 ## 🔗 Links
+
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lokeshcj-415113118)
-
-

@@ -34,8 +34,8 @@ const login = async (req, res, next) => {
   try {
     // Get Username and valid If user exists in the database
     const { username, password } = req.body;
-    console.log(username);
-    console.log(password);
+    // console.log(username);
+    // console.log(password);
     //  Query the database with name received
     const user = await User.findOne({ where: { username } });
     if (user == null) {
