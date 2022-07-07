@@ -36,13 +36,7 @@
 		{
 			"name": "Protected Route",
 			"protocolProfileBehavior": {
-				"disabledSystemHeaders": {
-					"host": true,
-					"user-agent": true,
-					"accept": true,
-					"accept-encoding": true,
-					"connection": true
-				}
+				"disabledSystemHeaders": {}
 			},
 			"request": {
 				"method": "GET",
